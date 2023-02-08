@@ -1,3 +1,5 @@
+println 'Hello from example1'
+
 def example1() {
   println 'Hello from example1'
 }
