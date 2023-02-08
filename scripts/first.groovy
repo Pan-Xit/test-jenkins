@@ -1,11 +1,2 @@
-pipeline {
-    agent any
-
-    stages{
-        stage("Stage 1") {
-            steps {
-                echo "Hello"
-            }
-        }
-    }
-}
+def val = "Hello world"
+println(val)
