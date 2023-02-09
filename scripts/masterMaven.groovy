@@ -1,9 +1,9 @@
 mavenJob('example') {
   preBuildSteps {
-	  remoteTrigger('my_host', 'pipeline_with_params') {
-      parameters(jobName: 'jobName’, jobValue: 'jobValue')
+    remoteTrigger('my_host', 'pipeline_with_params') {
+      parameters(jobName: 'jobName', jobValue: 'jobValue')
       blockBuildUntilComplete()
-	    shouldNotFailBuild(true)
+      shouldNotFailBuild(true)
     }
     shell("echo 'run before Maven'") 	
   }
