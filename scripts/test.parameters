@@ -1,1 +1,2 @@
-jobName=$jobName\jobValue=$jobValue
+jobName=$jobName
+jobValue=$jobValue
