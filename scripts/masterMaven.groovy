@@ -5,7 +5,7 @@ mavenJob('example') {
   
   preBuildSteps {
     remoteTrigger('my_host', 'pipeline_with_params') {
-      parameter('param', 'test')
+      parameterFile("scripts/test.parameters")
       blockBuildUntilComplete()
       shouldNotFailBuild(true)
     }
