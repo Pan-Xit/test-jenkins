@@ -1,7 +1,7 @@
 mavenJob('example') {
-  parameters {
-    stringParam('WORKSPACE_PATH', "${WORKSPACE}")
- }
+  environmentVariables {
+    propertiesFile("scripts/test.properties")
+  }
   
   preBuildSteps {
     remoteTrigger('my_host', 'pipeline_with_params') {
